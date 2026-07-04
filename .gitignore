@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Playwright
+playwright/.cache/
+test-results/
+playwright-report/
+blob-report/
+
+# Allure
+allure-results/
+allure-report/
+
+# Generated BDD files
+.features-gen/
+results/
+
+# Logs
+*.log
+local.log
+
+# Screenshots / Videos / Traces
+screenshots/
+videos/
+trace/
+
+# Build output
+dist/
+
+# Test artifacts
+test-results.json
+
+# IDE
+.idea/
+.history/
+*.iml
+.vscode/settings.json
+
+# OS files
+.DS_Store
+Thumbs.db
