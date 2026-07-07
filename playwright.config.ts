@@ -29,8 +29,6 @@ export default defineConfig({
 
   use: {
     trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
     ignoreHTTPSErrors: true,
   },
 
@@ -42,6 +40,9 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         channel: 'chrome',
+        screenshot: 'on',
+        video: 'on',
+        trace: 'on',
         headless: !!process.env.CI,
         launchOptions: {
           slowMo: 500,
@@ -56,6 +57,9 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         channel: 'msedge',
+        screenshot: 'on',
+        video: 'on',
+        trace: 'on',
         headless: !!process.env.CI,
         launchOptions: {
           slowMo: 500,
